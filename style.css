@@ -19,7 +19,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 4em;
+    min-    height: 4em;
     color: whitesmoke;
     background-color: #005A31;
     position: fixed;
@@ -46,16 +46,15 @@ nav{
     
 }
 
-nav a{
-    padding: 1em;
-    margin: auto;
-}
 
 nav a:hover{
     
     background-color:  rgb(3, 71, 41)
 }
 
+.navbar-nav {
+    background: #005A31;
+}
 
 .container{
     padding-top: 3em;
@@ -88,7 +87,7 @@ box-shadow: 0px 9px 34px -2px rgba(0,0,0,0.75);
     font-family: 'Courier New', Courier, monospace
 }
 
-#welcome-section h2, #media-wrapper p, footer{
+#welcome-section h2, #media-wrapper p{
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace
 }
@@ -177,23 +176,9 @@ div.smallgap{
     width: 1em;
     }
 
-footer{
-    height: 3em;
-    max-height: 5vh;
-    text-align: right;
-    padding-right: 1em;
-    width: 100%;
-    background-color: black;
-    color: ghostwhite;
-  
-
-}
-
 
 @media (max-width:450px) {
-    .top {
-        height: 6em;
-    }
+
 
 }
 @media (max-width:850px) {
