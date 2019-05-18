@@ -42,6 +42,7 @@ a:hover {
 
 nav{
     display: flex;
+    z-index: 1;
     justify-content: flex-end;
     
 }
@@ -60,7 +61,7 @@ nav a:hover{
     padding-top: 3em;
 }
 
-#welcome-section{
+.welcome-section{
     height: 100vh;
     background-color: #005A31;
     display: flex;
@@ -73,21 +74,27 @@ nav a:hover{
 box-shadow: 0px 9px 34px -2px rgba(0,0,0,0.75);
 }
 
+.shadowsDiv {
+    height: 100vh;
+    -webkit-box-shadow: 0px 9px 34px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 9px 34px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 9px 34px -2px rgba(0,0,0,0.75);
+    
+}
 
-#welcome-section div{
+.welcome-section div{
 
     color: black;
-    font-size: 34px;
     text-align: center;
   
 }
 
-#welcome-section h1{
+.welcome-section h1{
     font-size: 30px;
     font-family: 'Courier New', Courier, monospace
 }
 
-#welcome-section h2, #media-wrapper p{
+.welcome-section h2, #media-wrapper p{
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace
 }
@@ -205,7 +212,7 @@ div.smallgap{
         height: 50px;
     }
 
-    #welcome-section{
+    .welcome-section{
         display: flex;
         flex-wrap: wrap;
 
