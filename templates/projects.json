@@ -1,0 +1,29 @@
+{
+    "projects": [
+        {
+            "title": "Documentation page",
+            "picture": "https://image.ibb.co/hAVWXe/documentationpage.png",
+            "link": "https://codepen.io/rinconm37/full/pZmjEg",
+            "info": "",
+            "github": "",
+            "description": ""
+            
+        },
+        {
+            "title": "Chouch colection",
+            "picture": "https://image.ibb.co/g1oAse/couchcolection.png",
+            "link": "https://codepen.io/rinconm37/pen/djEBqq",
+            "info": "",
+            "github": "",
+            "description": ""
+        },
+        {
+            "title": "Movie taste survey",
+            "picture": "https://image.ibb.co/fLmfse/movietastesurvey.png",
+            "link": "https://codepen.io/rinconm37/pen/djEBqq",
+            "info": "",
+            "github": "",
+            "description": ""
+        }
+    ]
+}

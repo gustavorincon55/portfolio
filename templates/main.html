@@ -1,0 +1,109 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<div class="pt-4">
+
+    <br><br>
+
+    <div id="carouselExampleControls" class="carousel slide shadowsDiv" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+
+                <div class=" welcome-section">
+                    <div>
+                        <h1>Languages I work with:</h1>
+                        <br>
+                        <h2>JavaScript,</h2>
+                        <h2>Python,</h2>
+                        <h2>CSS/HTML,</h2>
+                        <h2>SQL.</h2>
+                    </div>
+
+                    <div>
+                        <h1>Frameworks/Libraries I work with:</h1>
+                        <br>
+                        <h2>Flask (Python backend),</h2>
+                        <h2>SQLAlchemy,</h2>
+                        <h2>Bootstrap.</h2>
+                        <br>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="carousel-item">
+
+                <div class=" welcome-section">
+
+                    <div>
+                        <h1>Thechnologies I use:</h1>
+                        <br>
+                        <h2>Linux,</h2>
+                        <h2>Sessions,</h2>
+                        <h2>API,</h2>
+                        <h2>JINJA templates.</h2>
+                    </div>
+
+                    <div>
+                        <h1>Tools I use:</h1>
+                        <br>
+                        <h2>Git,</h2>
+                        <h2>Linux terminal (bash),</h2>
+                        <h2>DevTools.</h2>
+                        <br>
+                    </div>
+
+                </div>
+            </div>
+            <div class="carousel-item ">
+
+                <div class=" welcome-section">
+                    <div>
+                        <h1>I like to:</h1>
+                        <br>
+                        <h2>Build things,</h2>
+                        <h2>Solve problems,</h2>
+                        <h2>Make life easier with software.</h2>
+                    </div>
+
+                    <div>
+                        <h1>I am:</h1>
+                        <br>
+                        <h2>A problem solver,</h2>
+                        <h2>A self learner,</h2>
+                        <h2>A geek.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <section id="projects">
+
+        {% for project in projects %}
+
+        <div class="project-tile">
+                <p>{{project.title}}</p>
+                <img src="{{project.picture}}" alt="">
+            <p>{{project.description}}</p>
+            <div class="project-tile-body">
+                    <a class="btn-tile" href="{{project.link}}">Website</a>
+                    <a class="btn-tile" href="{{project.info}}">Info</a>
+                    <a class="btn-tile" href="{{project.gihub}}">Github</a>
+                </div>
+        </div>
+
+        <div class="flexbrake"></div>
+        {% endfor %}
+    </section>
+
+</div>
+{% endblock %}
