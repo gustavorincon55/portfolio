@@ -105,14 +105,14 @@ nav a:hover{
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    padding: 3em;
+    /*padding: 3em;*/
     min-height: 100vh;
 
 }
 
 
 div.project-tile{
-    
+    margin-top: 2.5em;
     width: 30%;
     -webkit-box-shadow: 0px 0px 17px 0px rgba(101,103,172,1);
     -moz-box-shadow: 0px 0px 17px 0px rgba(101,103,172,1);
@@ -128,11 +128,16 @@ div.project-tile:hover{
     border-radius: 6px;
 }
 
-.project-tile p {
+.project-description {
     text-align: center;
-    margin-top: .9em;
+    margin: .9em;
+    height: 5em;
 }
 
+.project-tile h5{
+    text-align: center;
+    margin: .8em
+}
 .project-tile img{
 
     width: 100%;
@@ -210,10 +215,14 @@ div.smallgap{
     }
 
 
-@media (max-width:450px) {
 
-
+#projects-heading
+{
+    text-align: center;
+    margin: 2em auto 0em;
+    text-decoration: underline
 }
+
 @media (max-width:850px) {
 
     #projects{
@@ -222,14 +231,13 @@ div.smallgap{
         flex-wrap: wrap;
     }
 
-    .flexbrake{
-        width: 100%;
-        margin-top: 3vh;
-        margin-bottom: 3vh;
+    #projects{
+        flex-direction: column;
+
     }
 
     div.project-tile{
-
+        margin: 2em 0em;
         width: 100%;
     }
 
@@ -244,6 +252,11 @@ div.smallgap{
 
     }
 
+    .project-description {
+        height: auto;
+
+    }
+    
 }
 
 

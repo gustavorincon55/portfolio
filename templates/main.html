@@ -5,7 +5,7 @@
 
     <br><br>
 
-    <div id="carouselExampleControls" class="carousel slide shadowsDiv" data-ride="carousel">
+    <div id="carouselMain" class="carousel slide shadowsDiv" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
 
@@ -76,32 +76,32 @@
                 </div>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#carouselMain" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#carouselMain" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
     </div>
 
+    <h2 id="projects-heading">Projects</h2>
     <section id="projects">
-
         {% for project in projects %}
 
         <div class="project-tile">
-                <p>{{project.title}}</p>
-                <img src="{{project.picture}}" alt="">
-            <p>{{project.description}}</p>
+            <h5>{{project.title}}</h5>
+            <img src="{{project.picture}}" alt="">
+            <div class="project-description">
+                <p class="project-description">{{project.description}}</p>
+            </div>
             <div class="project-tile-body">
-                    <a class="btn-tile" href="{{project.link}}">Website</a>
-                    <a class="btn-tile" href="{{project.info}}">Info</a>
-                    <a class="btn-tile" href="{{project.gihub}}">Github</a>
-                </div>
+                <a class="btn-tile" href="{{project.link}}">Website</a>
+                <a class="btn-tile" href="{{project.info}}">Info</a>
+                <a class="btn-tile" href="{{project.code}}">Code</a>
+            </div>
         </div>
-
-        <div class="flexbrake"></div>
         {% endfor %}
     </section>
 

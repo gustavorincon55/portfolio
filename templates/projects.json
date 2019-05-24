@@ -5,25 +5,49 @@
             "picture": "https://image.ibb.co/hAVWXe/documentationpage.png",
             "link": "https://codepen.io/rinconm37/full/pZmjEg",
             "info": "",
-            "github": "",
-            "description": ""
+            "code": "https://codepen.io/rinconm37/pen/pZmjEg",
+            "description": "Simple documentation page made using only html/css."
             
         },
         {
-            "title": "Chouch colection",
+            "title": "Equipment control",
             "picture": "https://image.ibb.co/g1oAse/couchcolection.png",
             "link": "https://codepen.io/rinconm37/pen/djEBqq",
             "info": "",
-            "github": "",
-            "description": ""
+            "code": "",
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda magnam aperiam facilis fuga aliquid est nisi expedita non perspiciatis nulla."
         },
         {
             "title": "Movie taste survey",
             "picture": "https://image.ibb.co/fLmfse/movietastesurvey.png",
             "link": "https://codepen.io/rinconm37/pen/djEBqq",
             "info": "",
-            "github": "",
-            "description": ""
+            "code": "",
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda magnam aperiam facilis fuga aliquid est nisi expedita non perspiciatis nulla."
+        },
+        {
+            "title": "Fruit comparison",
+            "picture": "https://image.ibb.co/fLmfse/movietastesurvey.png",
+            "link": "#",
+            "info": "",
+            "code": "",
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda magnam aperiam facilis fuga aliquid est nisi expedita non perspiciatis nulla."
+        },
+        {
+            "title": "Finance stock app",
+            "picture": "https://image.ibb.co/fLmfse/movietastesurvey.png",
+            "link": "#",
+            "info": "",
+            "code": "",
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda magnam aperiam facilis fuga aliquid est nisi expedita non perspiciatis nulla."
+        },
+        {
+            "title": "Text-comparison",
+            "picture": "https://image.ibb.co/fLmfse/movietastesurvey.png",
+            "link": "#",
+            "info": "",
+            "code": "",
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda magnam aperiam facilis fuga aliquid est nisi expedita non perspiciatis nulla."
         }
     ]
 }
