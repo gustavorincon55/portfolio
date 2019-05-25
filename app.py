@@ -1,7 +1,7 @@
 import csv
 import json
 from flask import Flask, jsonify, redirect, render_template, request
-
+import os
 # Configure application
 app = Flask(__name__)
 
@@ -23,4 +23,8 @@ def after_request(response):
 
 @app.route("/", methods=["GET"])
 def get_index():
-    return render_template("main.html", projects=projects["projects"])
+    path = os.getcwd()
+    return render_template("main.html", projects=projects["projects"], path=path)
+
+if __name__ == '__main__':
+    app.run(debug=True)
