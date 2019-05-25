@@ -1,5 +1,10 @@
 {% extends "layout.html" %}
 
+{% block title %}
+Portfolio
+{% endblock %}
+
+
 {% block carousel %}
 <br><br>
 
@@ -88,11 +93,6 @@
 
 
 
-
-
-
-
-
 {% block projects %}
 
 <h2 id="projects-heading">Projects</h2>
@@ -101,13 +101,12 @@
 
     <div class="project-tile">
         <h5>{{project.title}}</h5>
-        <img src="{{ project.picture[0] }}" alt="">
+        <img src="{{ project.picture[0] }}" class="project-img" alt="">
         <div class="project-description">
             <p class="project-description">{{project.description}}</p>
         </div>
         <div class="project-tile-body">
             <a class="btn-tile" target="_blank" href="{{project.link}}">Website</a>
-            <a class="btn-tile" target="_blank" href="{{project.info}}">Info</a>
             <a class="btn-tile" target="_blank" href="{{project.code}}">Code</a>
         </div>
     </div>

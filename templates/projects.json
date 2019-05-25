@@ -1,56 +1,52 @@
 {
     "projects": [
-        {
-            "title": "Documentation page",
-            "picture": ["/static/pictures/documentation-page/documentation-page.png"],
-            "link": "https://codepen.io/rinconm37/full/pZmjEg",
-            "info": "",
-            "code": "https://codepen.io/rinconm37/pen/pZmjEg",
-            "description": "Simple documentation page made using only html/css."
-            
-        },
+
         {
             "title": "Equipment control",
             "picture": 
             ["/static/pictures/equipment-control/equipment-control-1.png","/static/pictures/equipment-control/equipment-control-2.png"
             ],
-            "link": "https://codepen.io/rinconm37/pen/djEBqq",
-            "info": "",
-            "code": "",
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda magnam aperiam facilis fuga aliquid est nisi expedita non perspiciatis nulla."
-        },
-        {
-            "title": "Employment survey",
-            "picture": ["/static/pictures/flask-survey/flask-survey-1.png", "/static/pictures/flask-survey/flask-survey-2.png"],
-            "link": "https://codepen.io/rinconm37/pen/djEBqq",
-            "info": "",
-            "code": "",
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda magnam aperiam facilis fuga aliquid est nisi expedita non perspiciatis nulla."
-        },
-        {
-            "title": "Fruit comparison",
-            "picture": ["/static/pictures/fruit-comparison/fruit-comparison-1.png", "/static/pictures/fruit-comparison/fruit-comparison-2.png"],
             "link": "#",
-            "info": "",
-            "code": "",
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda magnam aperiam facilis fuga aliquid est nisi expedita non perspiciatis nulla."
+            "code": "https://github.com/gustavorincon55/equipment-control",
+            "description": "Administrative tool meant to be used by a team, to keep track of equipment claims."
         },
         {
             "title": "Finance stock app",
             "picture": ["/static/pictures/finance-stocks-app/finance-stocks-app-1.png","/static/pictures/finance-stocks-app/finance-stocks-app-2.png","/static/pictures/finance-stocks-app/finance-stocks-app-3.png",
                 "/static/pictures/finance-stocks-app/finance-stocks-app-4.png","/static/pictures/finance-stocks-app/finance-stocks-app-5.png"],
             "link": "#",
-            "info": "",
-            "code": "",
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda magnam aperiam facilis fuga aliquid est nisi expedita non perspiciatis nulla."
+            "code": "https://github.com/gustavorincon55/finance-stocks-app",
+            "description": "Page that will let you buy and sell fictional stocks based on real ones from the stock market."
         },
+        {
+            "title": "Employment survey",
+            "picture": ["/static/pictures/flask-survey/flask-survey-1.png", "/static/pictures/flask-survey/flask-survey-2.png"],
+            "link": "https://codepen.io/rinconm37/pen/djEBqq",
+            "code": "https://github.com/gustavorincon55/survey-flask",
+            "description": "Employment satisfaction survey. Will output all of the results. Made using Flask for the Backend, and csv to keep track of the data."
+        },
+        {
+            "title": "Fruit comparison",
+            "picture": ["/static/pictures/fruit-comparison/fruit-comparison-1.png", "/static/pictures/fruit-comparison/fruit-comparison-2.png"],
+            "link": "#",
+            "code": "https://github.com/gustavorincon55/fruit-comparison.github.io",
+            "description": "Page to compare fruits. Build using JavaScript, AJAX, bootstrap, HTML/CSS."
+        },
+        {
+            "title": "Documentation page",
+            "picture": ["/static/pictures/documentation-page/documentation-page.png"],
+            "link": "https://codepen.io/rinconm37/full/pZmjEg",
+            "code": "https://codepen.io/rinconm37/pen/pZmjEg",
+            "description": "Simple documentation page made using only html/css."
+            
+        },
+
         {
             "title": "Text-comparison",
             "picture": ["/static/pictures/text-comparison/text-comparison-1.png","/static/pictures/text-comparison/text-comparison-2.png"],
             "link": "#",
-            "info": "",
-            "code": "",
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda magnam aperiam facilis fuga aliquid est nisi expedita non perspiciatis nulla."
+            "code": "https://github.com/gustavorincon55/text-comparison",
+            "description": "Flask app that compares two text files. Build using Python (flask) for the back end."
         }
     ]
 }
