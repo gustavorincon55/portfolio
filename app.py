@@ -8,9 +8,8 @@ app = Flask(__name__)
 # Reload templates when they are changed
 app.config["TEMPLATES_AUTO_RELOAD"] = True
 
-projects = open('templates/projects.json')
-
-projects = json.loads(projects.read())
+with open('templates/projects.json') as x:
+    projects = json.loads(x.read())
 
 @app.after_request
 def after_request(response):
