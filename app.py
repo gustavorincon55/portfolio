@@ -9,7 +9,7 @@ app = Flask(__name__)
 app.config["TEMPLATES_AUTO_RELOAD"] = True
 
 THIS_FOLDER = os.path.dirname(os.path.abspath(__file__))
-temp_projectsJSON = os.path.join(THIS_FOLDER, 'projects.json')
+temp_projectsJSON = os.path.join(THIS_FOLDER, 'templates/projects.json')
 
 with open(temp_projectsJSON) as x:
     projects = json.loads(x.read())
