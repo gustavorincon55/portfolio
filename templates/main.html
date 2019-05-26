@@ -6,7 +6,6 @@ Portfolio
 
 
 {% block carousel %}
-<br><br>
 
 <div id="carouselMain" class="carousel slide shadowsDiv" data-ride="carousel">
     <div class="carousel-inner">
@@ -92,7 +91,7 @@ Portfolio
 
 
 
-
+{{'''<!--
 {% block projects %}
 
 <h2 id="projects-heading">Projects</h2>
@@ -112,4 +111,48 @@ Portfolio
     </div>
     {% endfor %}
 </section>
+{% endblock %}
+-->'''}}
+
+{% block projects %}
+<h2 id="projects-heading">Projects</h2>
+<section id="projects">
+
+    {% for project in projects %}
+
+    <div class="project-tile">
+        <h5>{{project.title}}</h5>
+
+                <div id="carousel-{{project.id}}" class="carousel slide project-img" data-ride="carousel">
+                    <div class="carousel-inner" style="height: 100%;">
+                        <div class=" carousel-item active" style="height: 100%;">
+                            <img src="{{ project.picture[0] }}" class="" alt="" style="height: 100%;">
+                        </div>
+                        {% for picture in project.picture[1:] %}
+                        <div class="carousel-item" style="height: 100%;">
+                            <img src="{{ picture }}" class="" alt="" style="height: 100%;">
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-{{project.id}}" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" style="background-color: black;" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-{{project.id}}" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" style="background-color: black;" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+        <div class="project-description">
+            <p class="project-description">{{project.description}}</p>
+        </div>
+        <div class="project-tile-body">
+            <a class="btn-tile" target="_blank" href="{{project.link}}"   rel="noopener" >Website</a>
+            <a class="btn-tile" target="_blank" href="{{project.code}}"  rel="noopener"  >Code</a>
+        </div>
+    </div>
+    {% endfor %}
+</section>
+
 {% endblock %}
