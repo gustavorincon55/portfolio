@@ -8,7 +8,10 @@ app = Flask(__name__)
 # Reload templates when they are changed
 app.config["TEMPLATES_AUTO_RELOAD"] = True
 
-with open('templates/projects.json') as x:
+THIS_FOLDER = os.path.dirname(os.path.abspath(__file__))
+temp_projectsJSON = os.path.join(THIS_FOLDER, 'projects.json')
+
+with open(temp_projectsJSON) as x:
     projects = json.loads(x.read())
 
 @app.after_request
